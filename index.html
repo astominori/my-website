@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astromimiy.com</title>
+    <link rel="stylesheet" href="https://use.typekit.net/roz7lzr.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page-top">
     <header class="site-header">
         <div class="container">
-            <div class="light-container">
+            <div class="left-container">
             </div>
-            <div class="left-header">
+            <div class="right-header">
                 <a href="#">ABOUT</a>
                 <a href="#">PROFILE</a>
                 <a href="#">LINK</a>
-                <a href="#">CONTACT</a>
+                <div class="pink-button">
+                    <a href="#">
+                        <img class="mail-icon" src="./img/mail-icon.svg" alt="mail">
+                        <p>CONTACT</p>    
+                    </a>
+                </div> 
             </div>
         </div>
     </header>
@@ -30,64 +37,136 @@
                         Githubやブログ、各種SNSへのリンクを紹介しています。</h3>
                     <h2 class="site-name">astromimiy.com</h2>
                 </div>
-                <div class="light-container">
-                    <img src="#" alt="night sky" />
+                <div class="right-container">
+                    <img src="./img/top-image.svg" alt="night sky" />
                 </div>
             </div>
         </section>
         <!-- ABOUT -->
         <section class="section-about">
+            <div class="section-title">
+                <h2>ABOUT</h2>
+            </div>
             <div class="container">
-                <div class="section-title">
-                    <h2>ABOUT</h2>
-                </div>
                 <div class="left-container">
                     <h2 class="site-name">astromimiy.com</h2>
-                    <span class="square-white">
-                        <h3>astromimiyは、星とITが好きなminoriが<br/>
-                            自分のアウトプットを公開するための場です。<br/>
-                            写真やプログラミング。ブログなど<br/>
-                            日々アップデートを行い、自分の好きな<br/>
-                            世界観を実現できるよう、日々勉強中です。</h3>
-                    </span>
+                    <div class="square-white">
+                        <div class="text">
+                            <h3>astromimiyは、星とITが好きなminoriが<br/>
+                                自分のアウトプットを公開するための場です。<br/>
+                                写真やプログラミング。ブログなど<br/>
+                                日々アップデートを行い、自分の好きな<br/>
+                                世界観を実現できるよう、日々勉強中です。</h3>    
+                        </div>
+                    </div>
                 </div>
-                <div class="light-container">
-                    <span class="square-pink"></span>
-                    <img src="#" alt="about" />
+                <div class="right-container">
+                    <div class="square-pink">
+                        <img class="about-image" src="./img/about-image.svg" alt="about" />
+                    </div>
                 </div>
             </div>
         </section>
         <!--PROFILE-->
         <section class="section-profile">
+            <div class="section-title">
+                <h2>PROFILE</h2>
+            </div>
             <div class="container">
-                <div class="section-title">
-                    <h2>PROFILE</h2>
+                <div class="left-container">
+                    <p class="profile-name">minori</p>
+                    <img class="my-icon" src="./img/my-portait.png" alt="my icon">
                 </div>
-            </div>
-            <div class="left-container">
-                <p class="profile-name">minori</p>
-                <img class="my-icon" src="#" alt="my icon">
-            </div>
-            <div class="light-container">
-                <div class="profile-detail-container">
-                    <h3>
-                        星と旅行とゲームが好きな20代。紅茶も好き。<br>
-                        星空が大好きで毎年友人と星空撮影会を行ってる。<br>
-                        最近、Fortniteというゲームにハマり、e sportsも見るように<br>
-                        現在、某SaaS企業で元気に勤務中。
-                    </h3>
-                    <p class="fav-title">FAVORITE</p>
-                    <div class="fav-icon">
-                        <img src="#" alt="play game" />
-                        <img src="#" alt="camera" />
-                        <img src="#" alt="air plane" />
-                        <img src="#" alt="drink tea" />
-                        <img src="#" alt="mac book" />
+                <div class="right-container">
+                    <div class="profile-detail-container">
+                        <div class="text">
+                            <h3>
+                                星と旅行とゲームが好きな20代。紅茶も好き。<br>
+                                星空が大好きで毎年友人と星空撮影会を行ってる。<br>
+                                最近、Fortniteというゲームにハマり、e sportsも見るように<br>
+                                現在、某SaaS企業で元気に勤務中。
+                            </h3>
+                            <p class="fav-title">FAVORITE</p>
+                            <div class="fav-icon-list">
+                                <img class="fav-icon" src="./img/game-icon.svg" alt="play game" />
+                                <img class="fav-icon" src="./img/camera-icon.svg" alt="camera" />
+                                <img class="fav-icon" src="./img/airplane-icon.svg" alt="air plane" />
+                                <img class="fav-icon" src="./img/cafe-icon.svg" alt="drink tea" />
+                                <img class="fav-icon" src="./img/macbook-icon.svg" alt="mac book" />
+                            </div>    
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--LINK-->
+        <section class="section-link">
+            <div class="section-title">
+                <h2>LINK</h2>
+            </div>
+            <div class="container">
+                <div class="link-card">
+                    <div class="card-title">
+                        <img class="logo" src="./img/GitHub-Mark-120px-plus.png" alt="github" />
+                        <p>Github</p>
+                    </div>
+                    <div class="card-details">
+                        <p>
+                            プログラミングの実績を
+                            Githubに上げています。
+                            Name : astominori 
+                        </p>
+                    </div>
+                </div>
+                <div class="link-card">
+                    <div class="card-title">
+                        <img class="logo" src="./img/top-image.svg" alt="blog" />
+                        <p>Night Walk</p>
+                    </div>
+                    <div class="card-details">
+                        <p>
+                            自分の体験したことや、
+                            オタク事など雑記ブログです。
+                            三日坊主ぎみ…
+                        </p>
+                    </div>
+                </div>
+                <div class="link-card">
+                    <div class="card-title">
+                        <img class="logo" src="./img/Unsplash_Symbol.svg" alt="unsplash" />
+                        <p>Unsplash</p>
+                    </div>
+                    <div class="card-details">
+                        <p>
+                            自分が撮影した写真をunsplashに上げています。全て商用利用可です
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CONTACT-->
+        <section class="section-contact">
+            <div class="section-title">
+                <p class="contact-announce">お問い合わせはこちらから</p>
+            </div>
+            <div class="container">
+                <div class="section-button">
+                    <div class="pink-button">
+                        <a href="#">
+                            <img class="mail-icon" src="./img/mail-icon.svg" alt="mail">
+                            <p>CONTACT</p>    
+                        </a>
+                    </div> 
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>©︎2021 ASTROMIMIY</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
