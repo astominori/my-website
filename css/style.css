@@ -63,14 +63,28 @@
    font-size: 20px;  
 }
 
-.right-header > a {
+ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+
+ul > li {
    margin-left: 40px;
+}
+
+ul > li > a {
    text-decoration: none;
    color: #FFFFFE;
    line-height: 100px;
 }
 
-.right-header > .pink-button {
+ul > li > a:hover {
+   opacity: 0.8;
+}
+
+ul > li > .pink-button {
    width: 180px;
    height: 50px;
    background-color: #EEBBC3;
@@ -78,28 +92,25 @@
    position: relative;
 }
 
-.pink-button > a  {
+.pink-button > .link  {
    display: flex;
    justify-content: center;
    text-align: center;
-   text-decoration: none;
 }
 
-.pink-button > a > img {
+.pink-button > .link > img {
    width: 30px;
    padding-right: 10px;
 }
 
-.pink-button > a > p {
+.pink-button > .link > a {
    font-family: futura-pt,sans-serif;
    font-weight: 500;
    font-style: normal;
    font-size: 20px;
    line-height: 50px;
-}
-
-.right-header > a:hover {
-   opacity: 0.8;
+   text-decoration: none;
+   display: block;
 }
 
 /* body */
@@ -287,9 +298,13 @@
 .section-profile {
    padding-top: 60px;
    padding-bottom: 120px;
+   background:url('../img/profile-background.svg');
+   background-repeat: no-repeat;
+   background-position: left -20% bottom;
    background-color: #232946;
    width: 100%;
    height: 740px;
+   position: relative;
 }
 
 .section-profile > .section-title > h2 {
@@ -361,8 +376,13 @@
    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.17)
 }
 
+.card-title {
+   display: block;
+}
+
 .card-title > p {
    padding: 10px;
+   text-decoration: none;
 }
 
 .card-details {
@@ -402,24 +422,26 @@
    position: relative;
 }
 
-.section-button > .pink-button > a  {
+.section-button > .pink-button > .link  {
    display: flex;
    justify-content: center;
    text-align: center;
    text-decoration: none;
 }
 
-.section-button > .pink-button > a > img {
+.section-button > .pink-button > .link > img {
    width: 50px;
    padding-right: 10px;
 }
 
-.section-button > .pink-button > a > p {
+.section-button > .pink-button > .link > a {
    font-family: futura-pt,sans-serif;
    font-weight: 500;
    font-style: normal;
    font-size: 30px;
    line-height: 80px;
+   text-decoration: none;
+   display: block;
 }
 
 
