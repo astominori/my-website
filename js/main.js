@@ -12,3 +12,16 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+const typing = (element, sentence) => {
+    [...sentence].forEach((character, index) => {
+        setTimeout(() => {
+            if (index === 11){
+                document.querySelector(element).innerHTML += '<br/>';
+            };
+            document.querySelector(element).innerHTML += character;
+        }, 100 * ++index);
+    });
+}
+
+typing('#typing', 'Welcome tomy world');

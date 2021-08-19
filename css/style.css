@@ -481,3 +481,17 @@ footer {
    opacity: 1;
    transform: translate(0,0);
 }
+
+/* --- typing --- */
+
+typing::after{
+   content: '';
+   border-right: 2px solid;
+   animation: flashing 0.6 liner infinite;
+}
+
+@keyframes flashing {
+   0% {
+      opacity: 0;
+   }
+}
