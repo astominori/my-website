@@ -373,7 +373,14 @@ ul > li > .pink-button {
    padding: 30px;
    margin-top: 50px;
    margin-right: 20px;
-   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.17)
+   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.17);
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.link-card:hover {
+   box-shadow: none;
+   transform: translate3d(0, 6px, 0);
 }
 
 .card-title {
@@ -456,4 +463,35 @@ footer {
    font-weight: 500;
    font-style: normal;
    color: #FFFFFE;
+}
+
+/* --- fade group --- */
+
+.fade-in {
+   opacity: 0;
+   transition-duration: 1s;
+   transition-property: opacity, transform;
+}
+
+.fade-in-up {
+   transform: translate(0, 50px);
+}
+
+.scroll-in {
+   opacity: 1;
+   transform: translate(0,0);
+}
+
+/* --- typing --- */
+
+typing::after{
+   content: '';
+   border-right: 2px solid;
+   animation: flashing 0.6 liner infinite;
+}
+
+@keyframes flashing {
+   0% {
+      opacity: 0;
+   }
 }
