@@ -248,7 +248,7 @@ ul > li > .pink-button {
    text-align: center;
 }
 
-.section-about > .container > .left-container > .site-name {
+.section-about .site-name {
    text-align: center;
    color: #232946;
 }
@@ -266,9 +266,10 @@ ul > li > .pink-button {
    vertical-align: middle;
 }
 
-.square-white > .text > h3 {
+.square-white h3 {
    display: inline-block;
    text-align: left;
+   letter-spacing: 0.1em;
    line-height: 2.5;
 }
 
@@ -333,13 +334,13 @@ ul > li > .pink-button {
    padding-bottom: 40px;
 }
 
-.profile-detail-container > .text > h3 {
+.profile-detail-container h3 {
    display: inline-block;
    text-align: left;
    line-height: 2.5;
 }
 
-.profile-detail-container > .text > p {
+.profile-detail-container p {
    padding-top: 40px;
    padding-bottom: 15px;
    text-align: center;
@@ -484,7 +485,7 @@ footer {
 
 /* --- typing --- */
 
-.after-typing::after{
+#typing::after{
    content: '';
    border-right: 2px solid #FFFFFE;
    animation: flashing 0.6 liner infinite;

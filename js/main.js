@@ -22,8 +22,6 @@ const typing = (element, sentence) => {
             document.querySelector(element).innerHTML += character;
         }, 100 * ++index);
     });
-
-    document.querySelector(element).classList.toggle('after-typing');
 }
 
 typing('#typing', 'Welcome tomy world');
