@@ -218,7 +218,7 @@ ul > li > .pink-button {
    -moz-transform: translateX(-50%);
    -webkit-transform: translateX(-50%);
    -ms-transform: translateX(-50%);
-   transform: translate(-50%); /*位置調整*/
+   transform: translate(-50%);
 }
 
 .left-container {
@@ -270,7 +270,6 @@ ul > li > .pink-button {
    top: 90px;
    left: 50px;
    right: auto;
-
 }
 
 /* --- profile ---- */

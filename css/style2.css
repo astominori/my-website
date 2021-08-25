@@ -1,0 +1,255 @@
+@charset "UTF-8"; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    color: #232946;
+ }
+
+ .container {
+    max-width: 1180;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo {
+    width: 100px;
+    height: 100px;
+ }
+
+ .fav-icon {
+     width: 35px;
+ }
+
+ .my-icon {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center top;
+    background-color: #FFFFFE;
+ }
+
+ .about-image {
+     width: 250px;
+ }
+
+ .section-title {
+    font-family: futura-pt,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px; 
+    text-align: center;
+ }
+
+ /* header */
+
+.site-header {
+    width: 100%;
+    position: absolute;
+ }
+ 
+ .site-header > .container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 70px;
+ }
+ 
+ .right-header {
+    font-family: futura-pt,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;  
+ }
+ 
+ ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+ }
+ 
+ ul > li {
+    margin-left: 10px;
+ }
+ 
+ ul > li > a {
+    text-decoration: none;
+    color: #FFFFFE;
+    line-height: 70px;
+ }
+ 
+ ul > li > a:hover {
+    opacity: 0.8;
+ }
+ 
+ ul > .contact-button {
+     display: none;
+ }
+
+
+ /* body */
+
+ .section-top-hero {
+    background-color: #232946;
+    width: 100%;
+    height: 670px;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    border-bottom-left-radius: 50px;
+ }
+
+ .left-container > h1 {
+    font-family: open-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: #FFFFFE;
+    text-align: center;
+ }
+
+ .left-container > h3 {
+    margin-top: 25px;
+    font-family: open-sans,sans-serif;
+    font-weight: 500;
+    font-style: normal;  
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    color: #FFFFFE;
+    text-align: center;
+ }
+
+ .left-container > h2 {
+    margin-top: 20px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #EEBBC3;
+    font-size: 30px;  
+    text-align: center;
+    letter-spacing: 0.1em; 
+ }
+
+ .section-top-hero .right-container {
+     display: none;
+ }
+
+
+/* --- about --- */
+
+.section-about {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background-color: #D4D8F0;
+    width: 100%;
+}
+
+.section-title > h2 {
+    position: relative;
+    display: inline-block;
+ }
+ 
+ .section-title > h2:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background-color: #B8C1EC;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+ }
+
+ .section-about .site-name {
+    text-align: center;
+    color: #232946;
+ }
+
+ .left-container {
+    padding-top: 30px;
+    text-align: center;
+ }
+
+ .square-white {
+    width: 320px;
+    height: 180px;
+    background-color: #FFFFFE;
+    display: table;
+    margin-bottom: 60px;
+ }
+
+ .square-pink {
+    background-color: #EEBBC3;
+    width: 300px;
+    height: 180px;
+    position: relative;
+    margin-bottom: 150px;
+ }
+
+ .about-image {
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    right: auto;
+ }
+
+ .square-white > .text {
+    display: table-cell; /* table要素で■の枠内に綺麗に入れる */
+    vertical-align: middle;
+ }
+
+ .square-white h3 {
+    display: inline-block;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 2.5;
+    font-size: 13px;
+    font-family: open-sans,sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+ }
+
+@media (min-width: 600px) {
+
+    ul > li > .pink-button {
+        width: 180px;
+        height: 50px;
+        background-color: #EEBBC3;
+        border-radius: 10px;
+        position: relative;
+     }
+     
+     .pink-button > .link  {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+     }
+     
+     .pink-button > .link > img {
+        width: 30px;
+        padding-right: 10px;
+     }
+     
+     .pink-button > .link > a {
+        font-family: futura-pt,sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 50px;
+        text-decoration: none;
+        display: block;
+     }
+} 
